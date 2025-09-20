@@ -2050,7 +2050,7 @@ body {
 }
 
 .home {
-  background-image: url('https://github.com/harshwardhannathmishra-boop/myportfolioharsh/blob/main/kk%20logo2023.jpeg?raw=true');
+  background-image: url("https://github.com/harshwardhannathmishra-boop/myportfolioharsh/blob/main/kk%20logo2023.jpeg?raw=true");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
