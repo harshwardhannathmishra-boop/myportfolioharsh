@@ -3138,59 +3138,87 @@ header {
   }
 }
 
+/* ---------------- Achievements Section ---------------- */
 .achievements-section {
   padding: 60px 20px;
-  background-color: #f8f9fa;
+  background-color: #f0f4f8; /* soft gray-blue */
   text-align: center;
 }
 
 .achievements-section h2 {
   font-size: 2.5em;
   margin-bottom: 40px;
-  color: #333;
+  color: #1a3d7c; /* deep blue */
 }
 
-.achievement-cards {
+/* ---------------- Courses Section ---------------- */
+.courses-section {
+  padding: 60px 20px;
+  background-color: #e6f7ff; /* soft light blue */
+  text-align: center;
+}
+
+.courses-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  color: #007acc; /* medium blue */
+}
+
+/* ---------------- Seminars Section ---------------- */
+.seminars-section {
+  padding: 60px 20px;
+  background-color: #fff4e6; /* soft light orange */
+  text-align: center;
+}
+
+.seminars-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  color: #d35400; /* deep orange */
+}
+
+/* ---------------- Cards for all sections ---------------- */
+.achievement-cards, .courses-section .cards, .seminars-section .cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
 }
 
-.achievement-cards .card {
-  background-color: #fff;
+.cards .card, .achievement-cards .card {
+  background-color: #ffffff;
   border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
   padding: 20px;
   width: 250px;
-  position: relative;
-  transition: transform 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.achievement-cards .card:hover {
+.cards .card:hover, .achievement-cards .card:hover {
   transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
-.achievement-cards .card h3 {
+.cards .card h3, .achievement-cards .card h3 {
   font-size: 1.2em;
   margin-bottom: 10px;
   color: #007BFF;
 }
 
-.achievement-cards .card p {
+.cards .card p, .achievement-cards .card p {
   font-size: 0.95em;
   color: #555;
 }
 
-.achievement-cards .card .date {
+.cards .card .date, .achievement-cards .card .date {
   display: block;
   margin-top: 10px;
   font-size: 0.85em;
   color: #999;
 }
 
-/* Toggle button style */
-.toggle-btn {
+/* ---------------- Toggle Buttons for all sections ---------------- */
+.cards .toggle-btn, .achievement-cards .card .toggle-btn {
   margin-top: 15px;
   padding: 8px 15px;
   background-color: #007BFF;
@@ -3201,11 +3229,12 @@ header {
   transition: background 0.3s;
 }
 
-.toggle-btn:hover {
+.cards .toggle-btn:hover, .achievement-cards .card .toggle-btn:hover {
   background-color: #0056b3;
 }
 
-.certificate-link {
+/* ---------------- Certificate Links ---------------- */
+.cards .certificate-link, .achievement-cards .card .certificate-link {
   display: none;
   margin-top: 10px;
   text-decoration: none;
@@ -3213,76 +3242,13 @@ header {
   font-weight: bold;
 }
 
-.courses-section, .seminars-section {
-  padding: 60px 20px;
-  background-color: #fff; /* different from Achievements for contrast */
-  text-align: center;
+/* ---------------- Responsive Design ---------------- */
+@media screen and (max-width: 768px) {
+  .cards .card, .achievement-cards .card {
+    width: 90%;
+  }
 }
 
-.courses-section h2, .seminars-section h2 {
-  font-size: 2.5em;
-  margin-bottom: 40px;
-  color: #333;
-}
-
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.cards .card {
-  background-color: #f8f9fa;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  padding: 20px;
-  width: 250px;
-  transition: transform 0.3s;
-}
-
-.cards .card:hover {
-  transform: translateY(-10px);
-}
-
-.cards .card h3 {
-  font-size: 1.2em;
-  margin-bottom: 10px;
-  color: #007BFF;
-}
-
-.cards .card p {
-  font-size: 0.95em;
-  color: #555;
-}
-
-.cards .card .date {
-  display: block;
-  margin-top: 10px;
-  font-size: 0.85em;
-  color: #999;
-}
-
-.cards .toggle-btn {
-  margin-top: 15px;
-  padding: 8px 15px;
-  background-color: #007BFF;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.cards .toggle-btn:hover {
-  background-color: #0056b3;
-}
-
-.cards .certificate-link {
-  display: none;
-  margin-top: 10px;
-  text-decoration: none;
-  color: #007BFF;
   font-weight: bold;
 }
 
