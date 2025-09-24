@@ -62,3 +62,17 @@ const menu = document.getElementById('menu');
 menuToggle.addEventListener('click', () => {
   menu.classList.toggle('active');
 });
+
+<script>
+  function toggleLink(button) {
+    const link = button.nextElementSibling; // Get the certificate link
+    if (link.style.display === "block") {
+      link.style.display = "none";
+      button.textContent = "View Certificate";
+    } else {
+      link.style.display = "block";
+      button.textContent = "Hide Certificate";
+    }
+  }
+</script>
+
