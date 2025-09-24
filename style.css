@@ -3213,4 +3213,78 @@ header {
   font-weight: bold;
 }
 
+.courses-section, .seminars-section {
+  padding: 60px 20px;
+  background-color: #fff; /* different from Achievements for contrast */
+  text-align: center;
+}
+
+.courses-section h2, .seminars-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cards .card {
+  background-color: #f8f9fa;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 250px;
+  transition: transform 0.3s;
+}
+
+.cards .card:hover {
+  transform: translateY(-10px);
+}
+
+.cards .card h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #007BFF;
+}
+
+.cards .card p {
+  font-size: 0.95em;
+  color: #555;
+}
+
+.cards .card .date {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.85em;
+  color: #999;
+}
+
+.cards .toggle-btn {
+  margin-top: 15px;
+  padding: 8px 15px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.cards .toggle-btn:hover {
+  background-color: #0056b3;
+}
+
+.cards .certificate-link {
+  display: none;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #007BFF;
+  font-weight: bold;
+}
+
+
 
