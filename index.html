@@ -303,6 +303,54 @@
     
   </section>
 
+          <!-- Courses & Certificates Section -->
+<section id="courses" class="courses-section">
+  <div class="container">
+    <h2>Courses & Certificates 🎓</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Digital Marketing Course</h3>
+        <p>Completed an online course in digital marketing with practical projects.</p>
+        <span class="date">Jan 2025</span>
+        <button class="toggle-btn" onclick="toggleLink(this)">View Certificate</button>
+        <a href="https://example.com/digitalmarketing.pdf" target="_blank" class="certificate-link">Open Certificate</a>
+      </div>
+
+      <div class="card">
+        <h3>Excel Advanced Certification</h3>
+        <p>Completed Microsoft Excel Advanced course with hands-on training.</p>
+        <span class="date">March 2025</span>
+        <button class="toggle-btn" onclick="toggleLink(this)">View Certificate</button>
+        <a href="https://example.com/excel.pdf" target="_blank" class="certificate-link">Open Certificate</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Seminars & Workshops Section -->
+<section id="seminars" class="seminars-section">
+  <div class="container">
+    <h2>Seminars & Workshops 📝</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Finance Workshop</h3>
+        <p>Attended a 2-day workshop on modern financial strategies.</p>
+        <span class="date">Feb 2025</span>
+        <button class="toggle-btn" onclick="toggleLink(this)">View Certificate</button>
+        <a href="https://example.com/financeworkshop.pdf" target="_blank" class="certificate-link">Open Certificate</a>
+      </div>
+
+      <div class="card">
+        <h3>Marketing Seminar</h3>
+        <p>Participated in a seminar on digital marketing trends 2025.</p>
+        <span class="date">April 2025</span>
+        <button class="toggle-btn" onclick="toggleLink(this)">View Certificate</button>
+        <a href="https://example.com/marketingseminar.pdf" target="_blank" class="certificate-link">Open Certificate</a>
+      </div>
+    </div>
+  </div>
+</section>
+
           <section id="achievements" class="achievements-section">
   <div class="container">
     <h2>Achievements 🏆</h2>
@@ -426,7 +474,19 @@
   }
 </script>
 
-  
+  <script>
+  function toggleLink(button) {
+    const link = button.nextElementSibling;
+    if (link.style.display === "block") {
+      link.style.display = "none";
+      button.textContent = "View Certificate";
+    } else {
+      link.style.display = "block";
+      button.textContent = "Hide Certificate";
+    }
+  }
+</script>
+
   
   
 
