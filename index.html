@@ -298,6 +298,32 @@
     
   </section>
 
+          <section id="achievements" class="achievements-section">
+  <div class="container">
+    <h2>Achievements 🏆</h2>
+    <div class="achievement-cards">
+
+      <div class="card">
+        <h3>Certificate of Excellence</h3>
+        <p>Awarded by Sarala Birla University for highest percentage in Sem 3 & 4 in BBA.</p>
+        <span class="date">23 Sept 2025</span>
+        <button class="toggle-btn" onclick="toggleLink(this)">View Certificate</button>
+        <a href="https://example.com/certificate.pdf" target="_blank" class="certificate-link">Open Certificate</a>
+      </div>
+
+      <div class="card">
+        <h3>Other Achievement</h3>
+        <p>Describe another award or accomplishment here.</p>
+        <span class="date">Date</span>
+        <button class="toggle-btn" onclick="toggleLink(this)">View Certificate</button>
+        <a href="https://example.com/other.pdf" target="_blank" class="certificate-link">Open Certificate</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
      
   <section class="contact-access" id="contact" style="background: url('ohhh.jpg') no-repeat center center / cover; padding: 4rem 2rem; color: white; text-align: center;">
     <h2 style="color: #00ffcc;font-size: 2.5rem">Contact Me</h2> 
@@ -380,6 +406,19 @@
       navLinks.classList.toggle('active');
     });
   });
+</script>
+
+          <script>
+  function toggleLink(button) {
+    const link = button.nextElementSibling; // Get the certificate link
+    if (link.style.display === "block") {
+      link.style.display = "none";
+      button.textContent = "View Certificate";
+    } else {
+      link.style.display = "block";
+      button.textContent = "Hide Certificate";
+    }
+  }
 </script>
 
   
