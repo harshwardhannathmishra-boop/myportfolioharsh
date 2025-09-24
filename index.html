@@ -306,12 +306,16 @@
     
   </section>
 
-          <!-- Courses & Certificates Section -->
+         <!-- ---------------- Courses & Certificates Section ---------------- -->
 <section id="courses" class="courses-section">
   <div class="container">
     <h2>Courses & Certificates 🎓</h2>
     <div class="cards">
+
       <div class="card">
+        <div class="cert-logo">
+          <img src="https://img.icons8.com/ios-filled/50/007BFF/graduation-cap.png" alt="Course Logo"/>
+        </div>
         <h3>Digital Marketing Course</h3>
         <p>Completed an online course in digital marketing with practical projects.</p>
         <span class="date">Jan 2025</span>
@@ -320,22 +324,30 @@
       </div>
 
       <div class="card">
+        <div class="cert-logo">
+          <img src="https://img.icons8.com/ios-filled/50/007BFF/excel.png" alt="Course Logo"/>
+        </div>
         <h3>Excel Advanced Certification</h3>
         <p>Completed Microsoft Excel Advanced course with hands-on training.</p>
         <span class="date">March 2025</span>
         <button class="toggle-btn" onclick="toggleLink(this)">View Certificate</button>
         <a href="https://example.com/excel.pdf" target="_blank" class="certificate-link">Open Certificate</a>
       </div>
+
     </div>
   </div>
 </section>
 
-<!-- Seminars & Workshops Section -->
+<!-- ---------------- Seminars & Workshops Section ---------------- -->
 <section id="seminars" class="seminars-section">
   <div class="container">
     <h2>Seminars & Workshops 📝</h2>
     <div class="cards">
+
       <div class="card">
+        <div class="cert-logo">
+          <img src="https://img.icons8.com/ios-filled/50/007BFF/meeting.png" alt="Seminar Logo"/>
+        </div>
         <h3>Finance Workshop</h3>
         <p>Attended a 2-day workshop on modern financial strategies.</p>
         <span class="date">Feb 2025</span>
@@ -344,22 +356,30 @@
       </div>
 
       <div class="card">
+        <div class="cert-logo">
+          <img src="https://img.icons8.com/ios-filled/50/007BFF/presentation.png" alt="Seminar Logo"/>
+        </div>
         <h3>Marketing Seminar</h3>
         <p>Participated in a seminar on digital marketing trends 2025.</p>
         <span class="date">April 2025</span>
         <button class="toggle-btn" onclick="toggleLink(this)">View Certificate</button>
         <a href="https://example.com/marketingseminar.pdf" target="_blank" class="certificate-link">Open Certificate</a>
       </div>
+
     </div>
   </div>
 </section>
 
-          <section id="achievements" class="achievements-section">
+<!-- ---------------- Achievements Section ---------------- -->
+<section id="achievements" class="achievements-section">
   <div class="container">
     <h2>Achievements 🏆</h2>
     <div class="achievement-cards">
 
       <div class="card">
+        <div class="cert-logo">
+          <img src="https://img.icons8.com/ios-filled/50/007BFF/trophy.png" alt="Achievement Logo"/>
+        </div>
         <h3>Certificate of Excellence</h3>
         <p>Awarded by Sarala Birla University for highest percentage in Sem 3 & 4 in BBA.</p>
         <span class="date">23 Sept 2025</span>
@@ -368,6 +388,9 @@
       </div>
 
       <div class="card">
+        <div class="cert-logo">
+          <img src="https://img.icons8.com/ios-filled/50/007BFF/certificate.png" alt="Achievement Logo"/>
+        </div>
         <h3>Other Achievement</h3>
         <p>Describe another award or accomplishment here.</p>
         <span class="date">Date</span>
@@ -378,6 +401,7 @@
     </div>
   </div>
 </section>
+
 
 
      
@@ -490,7 +514,19 @@
   }
 </script>
 
-  
+  <script>
+  function toggleLink(button) {
+    const link = button.nextElementSibling;
+    if (link.style.display === "block") {
+      link.style.display = "none";
+      button.textContent = "View Certificate";
+    } else {
+      link.style.display = "block";
+      button.textContent = "Hide Certificate";
+    }
+  }
+</script>
+
   
 
 </body>
